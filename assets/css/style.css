@@ -217,7 +217,7 @@ section {
 }
 
 .section-list-item::before {
-    content: url('/assets/images/icons/icn-check.svg');
+    content: url('./assets/images/icons/icn-check.svg');
     margin-right: 10px;
 }
 
