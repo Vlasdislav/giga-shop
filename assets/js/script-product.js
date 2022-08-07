@@ -28,6 +28,9 @@ const createPageProduct = ({ img, title, cost, imgSecond, text, titleSecond }) =
 
 getData(`./assets/db/products-info.json`).then((data) => {
     const product = data[id];
+    if (!product) {
+        window.location.href = '/';
+    }
     createPageProduct(product);
 });
 
