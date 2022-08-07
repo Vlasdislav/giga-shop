@@ -29,3 +29,7 @@ getData(`./assets/db/products-info.json`).then((data) => {
     const product = data[id];
     createPageProduct(product);
 });
+
+form_button.addEventListener('click', () => {
+    alert('Заявка создана, ожидайте звонка оператора.');
+});
