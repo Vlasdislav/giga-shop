@@ -172,7 +172,7 @@ footer>.container {
 }
 
 .block-1 img, .block-2 img {
-    object-fit: cover;
+    /* object-fit: cover; */
     height: 100%;
     max-width: 600px;
 }
@@ -217,7 +217,7 @@ section {
 }
 
 .section-list-item::before {
-    content: url('./assets/images/icons/icn-check.svg');
+    content: url('/assets/images/icons/icn-check.svg');
     margin-right: 10px;
 }
 
@@ -379,9 +379,9 @@ section {
         margin: auto;
     }
 
-    .section-title {
+    /* .section-title {
         word-break: break-all;
-    }
+    } */
 }
 
 @media (max-width: 470px) {
