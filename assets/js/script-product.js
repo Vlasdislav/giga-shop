@@ -6,6 +6,7 @@ const section_img = document.querySelector('.block-1 .section-image');
 const section_cost = document.querySelector('.section-cost');
 const section_img_second = document.querySelector('.block-2 .section-image');
 const section_text = document.querySelector('.section-text');
+const form_button = document.querySelector('.form-button');
 
 const getData = async (path) => {
     const response = await fetch(path);
