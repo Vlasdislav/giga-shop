@@ -1,4 +1,4 @@
-const id = localStorage.getItem('product-id');
+const id = window.location.href.split('id')[1].replace(/[^0-9]/g,"");
 const page_title = document.querySelector('title');
 const section_title = document.querySelector('.block-1 .section-title');
 const section_title_second = document.querySelector('.block-2 .section-title');
