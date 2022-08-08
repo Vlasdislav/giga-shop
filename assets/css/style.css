@@ -380,8 +380,8 @@ input[type="tel"] {
     .block-1 img, .block-2 img {
         /* max-width: 100%; */
         /* object-fit: contain; */
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        height: 300px;
     }
 }
 
@@ -437,6 +437,10 @@ input[type="tel"] {
 
     .section-title {
         font-size: 32px;
+    }
+
+    .block-1 img, .block-2 img {
+        height: 200px;
     }
 
     .contact {
