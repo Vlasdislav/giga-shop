@@ -202,7 +202,7 @@ section {
 
 }
 
-.play:before {
+.play::before {
     content: '';
     width: 30px;
     height: 30px;
@@ -244,7 +244,7 @@ section {
 }
 
 .section-list-item::before {
-    content: url('/assets/images/icons/icn-check.svg');
+    content: url('../images/icons/icn-check.svg');
     margin-right: 10px;
 }
 
@@ -378,8 +378,6 @@ input[type="tel"] {
     }
 
     .block-1 img, .block-2 img {
-        /* max-width: 100%; */
-        /* object-fit: contain; */
         width: 100%;
         height: 300px;
     }
@@ -413,9 +411,13 @@ input[type="tel"] {
         margin: auto;
     }
 
-    /* .section-title {
-        word-break: break-all;
-    } */
+    .section-title {
+        -webkit-hyphens: manual;
+        -ms-hyphens: manual;
+        hyphens: manual;
+        /* word-break: break-all; */
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 470px) {
