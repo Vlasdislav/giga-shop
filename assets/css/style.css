@@ -188,6 +188,32 @@ section {
     border-radius: 100px 0px 100px 0px;
 }
 
+.play {
+    display: inline-flex;
+    align-items: center;
+    font-style: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+
+}
+
+.play:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('../images/icons/play.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+}
+
 .section-image-block {
     overflow: hidden;
     height: auto;
@@ -233,8 +259,8 @@ section {
     background-color: #fff;
     font-weight: 600;
     font-size: 24px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 15px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
     text-align: center;
     margin-top: 20px;
 }

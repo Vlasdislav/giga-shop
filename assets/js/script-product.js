@@ -7,6 +7,7 @@ const section_cost = document.querySelector('.section-cost');
 const section_img_second = document.querySelector('.block-2 .section-image');
 const section_text = document.querySelector('.section-text');
 const form_button = document.querySelector('.form-button');
+const play = document.querySelector('.play');
 
 const getData = async (path) => {
     const response = await fetch(path);
@@ -16,14 +17,15 @@ const getData = async (path) => {
     return await response.json();
 };
 
-const createPageProduct = ({ img, title, cost, imgSecond, text, titleSecond }) => {
+const createPageProduct = ({ img, title, cost, imgSecond, text, titleSecond, video }) => {
     page_title.innerHTML = `Giga Shop — ${title}`;
     section_title.innerHTML = title;
     section_img.src = `./assets/images/products/${img}`;
-    section_img_second.src = `./assets/images/products/${imgSecond}`
+    section_img_second.src = `./assets/images/products/${imgSecond}`;
     section_cost.innerHTML = cost;
     section_text.innerHTML = text;
     section_title_second.innerHTML = titleSecond;
+    play.href = `./assets/videos/products/${video}`;
 }
 
 getData(`./assets/db/products-info.json`).then((data) => {
